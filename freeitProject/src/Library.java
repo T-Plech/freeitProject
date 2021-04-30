@@ -6,15 +6,12 @@ public class Library {
 
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("выберите параметр поиска" + "\n" + "1. Название книги" + "\n" + "2.Автор"  + "\n" + "3. Жанр");
+        int your_choice;
+       do{ System.out.println("выберите параметр поиска" + "\n" + "1. Название книги" + "\n" + "2.Автор"  + "\n" + "3. Жанр");
 
-        int your_choice = sc.nextInt();
+       your_choice = sc.nextInt();}
 
-        while(your_choice<1 || your_choice>3) {
-            System.out.println("Сделайте свой выбор(от 1 до 3)");
-            your_choice = sc.nextInt();
-
-        }
+        while(your_choice<1 || your_choice>3);
 
         switch (your_choice){
             case 1:{ System.out.println("Введите название книги");
